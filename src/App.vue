@@ -1,15 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand px-3" href="/">Vuelog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" href="/">Home</a>
+        <a class="nav-link" href="/list">List</a>
+        <!-- <router-link to="/"></router-link> a태그대신에 사용가능-->
+      </div>
+    </div>
+  </nav>
+  <div div class="container-fluid mt-4">
+    <router-view :blogs="blogs"></router-view>
+  </div>      
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Blogs from './assets/blogs.js'
 
 export default {
   name: 'App',
+  data(){
+    return{
+      blogs:Blogs
+    }
+  },
   components: {
-    HelloWorld
   }
 }
 </script>
@@ -21,6 +39,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
