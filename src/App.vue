@@ -1,13 +1,13 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand px-3" href="/">Vuelog</a>
+    <a class="navbar-brand px-3" href="/vueLog">Vuelog</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" href="/">Home</a>
-        <a class="nav-link" href="/list">List</a>
+        <a class="nav-link active" href="/vueLog">Home</a>
+        <a class="nav-link" href="/vueLog/list">List</a>
         <!-- <router-link to="/"></router-link> a태그대신에 사용가능-->
       </div>
     </div>

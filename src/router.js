@@ -11,15 +11,15 @@ import CommentNotice from './components/CommentNotice.vue'
 
 const routes = [
   {
-    path: "/",
+    path: "/vueLog",
     component: Home,
   },
   {
-    path: "/list",
+    path: "/vueLog/list",
     component: List,
   },
   {
-    path: "/detail/:id",
+    path: "/vueLog/detail/:id",
     component: Detail,
     children:[
         { path: "member",component: Member},
