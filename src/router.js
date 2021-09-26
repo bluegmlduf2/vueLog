@@ -27,7 +27,7 @@ const routes = [
           beforeEnter: () => {
             const loginStat=false
             if(loginStat){
-              return '/'
+              return '/vueLog'
             }
           },
           components: {
