@@ -11,15 +11,15 @@ import CommentNotice from './components/CommentNotice.vue'
 
 const routes = [
   {
-    path: "/vueLog",
+    path: "/",
     component: Home,
   },
   {
-    path: "/vueLog/list",
+    path: "/list",
     component: List,
   },
   {
-    path: "/vueLog/detail/:id",
+    path: "/detail/:id",
     component: Detail,
     children:[
         { path: "member",component: Member},
@@ -27,7 +27,7 @@ const routes = [
           beforeEnter: () => {
             const loginStat=false
             if(loginStat){
-              return '/vueLog'
+              return '/'
             }
           },
           components: {
